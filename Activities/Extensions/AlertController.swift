@@ -11,7 +11,7 @@ extension SearchViewController {
     func presentSearchAlertController(withTitle title: String, message: String, style: UIAlertController.Style, completionHandler: @escaping (String) -> Void ) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: style)
         alert.addTextField { tf in
-            let names = ["Peter", "John", "Mark", "Anna", "Alice"]
+            let names = ["Peter", "Alexey", "Mark", "Anna", "Alice"]
             tf.placeholder = names.randomElement()
         }
         
