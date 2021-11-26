@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SearchViewController" customModule="Activities" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="female" translatesAutoresizingMaskIntoConstraints="NO" id="q48-Xr-9o3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjO-OH-2P3">
+                                <rect key="frame" x="16" y="30" width="343" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gender" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bug-Re-6mp">
+                                <rect key="frame" x="16" y="90" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfa-So-z2K">
+                                <rect key="frame" x="141" y="540" width="93" height="67"/>
+                                <color key="tintColor" red="0.1764705926" green="0.1686274707" blue="0.1607843041" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePadding="10">
+                                    <imageReference key="image" image="magnifyingglass.circle.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="43" scale="large" weight="bold"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="searchName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="npV-rc-jGF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q48-Xr-9o3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1oz-RD-Ctf"/>
+                            <constraint firstAttribute="bottom" secondItem="q48-Xr-9o3" secondAttribute="bottom" id="43W-eI-Yso"/>
+                            <constraint firstItem="SjO-OH-2P3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="F5N-Wg-vk1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bug-Re-6mp" secondAttribute="trailing" constant="16" id="FPK-O6-T8A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wfa-So-z2K" secondAttribute="bottom" constant="60" id="RgX-xP-b1f"/>
+                            <constraint firstItem="Bug-Re-6mp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SMQ-Bi-QCP"/>
+                            <constraint firstItem="SjO-OH-2P3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="btA-W7-301"/>
+                            <constraint firstItem="Wfa-So-z2K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cig-4W-e5E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SjO-OH-2P3" secondAttribute="trailing" constant="16" id="kUz-Zh-1Im"/>
+                            <constraint firstItem="q48-Xr-9o3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lL3-43-Rto"/>
+                            <constraint firstItem="Bug-Re-6mp" firstAttribute="top" secondItem="SjO-OH-2P3" secondAttribute="bottom" id="n4y-Uk-Uo5"/>
+                            <constraint firstItem="q48-Xr-9o3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y5a-Z4-TtQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="genderLabel" destination="Bug-Re-6mp" id="ne1-zl-eQJ"/>
+                        <outlet property="imgGender" destination="q48-Xr-9o3" id="iyQ-WL-6to"/>
+                        <outlet property="nameLabel" destination="SjO-OH-2P3" id="ToO-EG-FsU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.439252336448597" y="68.682505399568043"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="female" width="1363" height="2048"/>
+        <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
