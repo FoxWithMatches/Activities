@@ -13,7 +13,7 @@ struct CurrentName {
     
     let personGender: String
     
-    var count: String {
+    var imageGender: String {
         switch personGender {
         case "male": return "male"
         case "female": return "female"

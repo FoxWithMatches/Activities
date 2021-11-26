@@ -33,7 +33,7 @@ class SearchViewController: UIViewController {
         DispatchQueue.main.async {
             self.nameLabel.text = name.personNameCapitalized
             self.genderLabel.text = name.personGender
-            self.imgGender.image = UIImage(named: name.count)
+            self.imgGender.image = UIImage(named: name.imageGender)
         }
     }
 }
