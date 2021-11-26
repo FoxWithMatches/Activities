@@ -5,10 +5,12 @@
 //  Created by Alisa Ts on 26.11.2021.
 //
 
-import Foundation
-
 struct CurrentName {
     let personName: String
+    var personNameCapitalized: String {
+        personName.capitalized
+    }
+    
     let personGender: String
     
     var count: String {

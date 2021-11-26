@@ -31,7 +31,7 @@ class SearchViewController: UIViewController {
     
     func updateInterfaceWith(name: CurrentName) {
         DispatchQueue.main.async {
-            self.nameLabel.text = name.personName
+            self.nameLabel.text = name.personNameCapitalized
             self.genderLabel.text = name.personGender
             self.imgGender.image = UIImage(named: name.count)
         }
